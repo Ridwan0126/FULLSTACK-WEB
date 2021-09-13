@@ -15,10 +15,10 @@ class App extends Component {
   }
   componentDidMount() {
     UserService.getUsers().then((res) => {
-      console.log("CEK API LIST ====>", res);
-      for (let i = 0; i < res.data.length; i++) {
-        this.props.registrasi(res.data[i]);
-      }
+      console.log("CEK API LIST ====>", UserService);
+      // for (let i = 0; i < res.data.length; i++) {
+      //   this.props.registrasi(res.data[i]);
+      // }
     });
     customerService.getAllCustomer().then((res) => {
       console.log("CEK CUSTOMER LIST ===>", res);

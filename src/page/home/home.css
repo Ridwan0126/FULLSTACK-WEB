@@ -19,3 +19,34 @@
 .form-buy {
   margin-bottom: 30px;
 }
+.tagihan {
+  margin: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cont {
+  margin: 20px;
+}
+.txt1 {
+  margin-left: 10px;
+  padding: 5px;
+}
+.tst2 {
+  text-align: right;
+  margin-right: 10px;
+}
+.bk {
+  background-color: grey;
+  border-radius: 5px;
+}
+.title {
+  margin: 5px;
+}
+.subTitles {
+  text-align: right;
+  margin: 5px;
+}
+.titless {
+  font-size: 25px;
+  margin-left: 30px;
+}

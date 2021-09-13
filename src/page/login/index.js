@@ -76,7 +76,6 @@ class Login extends Component {
                   fullWidth
                   id="email"
                   name="email"
-                  // autoComplete="email"
                   autoFocus
                   placeholder="Masukkan email anda"
                   value={email}
@@ -92,7 +91,6 @@ class Login extends Component {
                   type="password"
                   placeholder="Masukkan sandi anda"
                   id="password"
-                  // autoComplete="current-password"
                   value={password}
                   onChange={this.handleChange}
                 />

@@ -106,7 +106,6 @@ class Register extends Component {
                   id="fullname"
                   placeholder="Masukkan nama lengkap anda"
                   name="fullname"
-                  autoComplete="fullname"
                   autoFocus
                   value={fullname}
                   onChange={this.handleChange}
@@ -119,7 +118,6 @@ class Register extends Component {
                   id="username"
                   placeholder="Masukkan username anda"
                   name="username"
-                  autoComplete="username"
                   value={username}
                   onChange={this.handleChange}
                 />
@@ -131,7 +129,6 @@ class Register extends Component {
                   id="email"
                   placeholder="Masukkan alamat email baru"
                   name="email"
-                  autoComplete="email"
                   value={email}
                   onChange={this.handleChange}
                 />
@@ -144,7 +141,6 @@ class Register extends Component {
                   placeholder="Masukkan password minimal 6 karakter"
                   type="password"
                   id="password"
-                  // autoComplete="current-password"
                   value={password}
                   onChange={this.handleChange}
                 />
@@ -157,7 +153,6 @@ class Register extends Component {
                   placeholder="Konfirmasi Password"
                   type="Password"
                   id="confirmPassword"
-                  // autoComplete="current-confirm-password"
                   value={confirmPassword}
                   onChange={this.handleChange}
                 />

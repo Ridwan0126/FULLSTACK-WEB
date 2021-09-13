@@ -13,32 +13,79 @@ class About extends Component {
           <div>
             <p className="title">Tagihan Pajak Bumi dan Bangunan</p>
           </div>
-          <div className="">
-            <p>
-              {idx + 1}. Nama : {customer.nama}
-            </p>
-            <p>Nomor NOP : {customer.nop}</p>
-            <p>Jenis Pajak : {customer.jenis}</p>
-            <p>Alamat Tinggal : {customer.alamat}</p>
-            <p>Alamat Objek Pajak : {customer.objek}</p>
-            <p>Tahun Pembayaran : {customer.tahun}</p>
-            <p>Estimasi Pembayaran : {customer.estimasi}</p>
-            <p>Jatuh Tempo : {customer.tempo}</p>
-            <hr />
-            <div>
-              <p>Rincian Tagihan</p>
-              <p>Keterlamabatan : {customer.telat}</p>
-              <p>Jumlah Tagihan : {this.convertRp(customer.tagihan)}</p>
-              <p>
-                Biaya Keterlambatan : {this.convertRp(customer.keterlambatan)}
-              </p>
-              <p>Biaya Admin : {this.convertRp(customer.admin)}</p>
-              <p>
-                Total Tagihan :{" "}
-                {this.convertRp(
-                  customer.tagihan + customer.keterlambatan + customer.admin
-                )}
-              </p>
+          <div className="cont">
+            <div className="bk">
+              <p className="txt1">Nama</p>
+            </div>
+            <p className="tst2">{customer.nama}</p>
+            <div className="bk">
+              <p className="txt1">Nomor NOP</p>
+            </div>
+            <p className="tst2">{customer.nop}</p>
+            <div className="bk">
+              <p className="txt1">Jenis Pajak</p>
+            </div>
+            <p className="tst2">{customer.jenis}</p>
+            <div className="bk">
+              <p className="txt1">Alamat Tinggal</p>
+            </div>
+            <p className="tst2">{customer.alamat}</p>
+            <div className="bk">
+              <p className="txt1">Alamat Objek Pajak</p>
+            </div>
+            <p className="tst2">{customer.objek}</p>
+            <div className="bk">
+              <p className="txt1">Tahun Pembayaran</p>
+            </div>
+            <p className="tst2">{customer.tahun}</p>
+            <div className="bk">
+              <p className="txt1">Estimasi Pembayaran</p>
+            </div>
+            <p className="tst2">{customer.estimasi}</p>
+            <div className="bk">
+              <p className="txt1">Jatuh Tempo</p>
+            </div>
+            <p className="tst2">{customer.tempo}</p>
+            <hr style={{ marginLeft: 10, marginRight: 10 }} />
+            <div className="tagihan">
+              <p className="titless">Rincian Tagihan</p>
+              <div>
+                <p className="titles">Keterlamabatan</p>
+              </div>
+              <div>
+                <p className="subTitles">{customer.telat}</p>
+              </div>
+              <div>
+                <p className="titles">Jumlah Tagihan</p>
+              </div>
+              <div>
+                <p className="subTitles">{this.convertRp(customer.tagihan)}</p>
+              </div>
+              <div>
+                <p className="titles">Biaya Keterlambatan</p>
+              </div>
+              <div>
+                <p className="subTitles">
+                  {this.convertRp(customer.keterlambatan)}
+                </p>
+              </div>
+              <div>
+                <p className="titles">Biaya Admin</p>
+              </div>
+              <div>
+                <p className="subTitles">{this.convertRp(customer.admin)}</p>
+              </div>
+              <div>
+                <p className="titles">Total Tagihan</p>
+              </div>
+              <div>
+                <p className="subTitles">
+                  {this.convertRp(
+                    customer.tagihan + customer.keterlambatan + customer.admin
+                  )}
+                </p>
+              </div>
+              <br />
             </div>
           </div>
         </div>
