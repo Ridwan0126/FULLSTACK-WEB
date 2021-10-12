@@ -18,6 +18,7 @@ class usersService {
         console.log("ERROR CREAT ===>", error.response);
       });
   };
+  //get user
 
   getUserById = (id) => {
     return axios
